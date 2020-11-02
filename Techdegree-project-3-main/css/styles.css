@@ -1,0 +1,297 @@
+li{
+  list-style-type: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+*{
+
+  margin: 0;
+font-family: 'Roboto', sans-serif;
+ box-sizing: border-box;
+
+}
+
+header{
+  background-color: rgb(105, 198, 115);
+  text-align: center;
+  box-sizing: border-box;
+
+
+
+}
+
+
+/* Classes */
+.maintitle{
+  padding: 20px 0 20px 0;
+  color: white;
+  text-shadow: 2px 2px 25px black;
+
+}
+.maintitletext{
+  font-family: 'Staatliches', sans-serif;
+
+}
+.title{
+
+font-weight: 900;
+
+font-size: 22px;
+margin-bottom: 40px;
+}
+
+.mainform{
+  margin: 0px 15px 0 15px;
+
+
+}
+
+section>h1,h2{
+text-align: center;
+margin: 30px 15px 15px 15px;
+font-size: 20px;
+font-weight: 900;
+
+
+}
+
+section>p{
+  text-align: center;
+margin: 12px;
+}
+
+.seperator,
+.seperator2{
+  border-top-color: rgb(105, 198, 115);
+  border-style: solid;
+  padding: 1px;
+  margin:45px 7px;
+
+
+}
+
+.seperator{
+  border-width: 4px 0 2px 0;
+  border-bottom-color:#03935e;
+
+}
+
+.seperator2{
+  border-width: 4px 0 0 0;
+
+
+
+  }
+
+
+  li > input, select{
+    width: 100%;
+    border-style: none;
+    padding: 13px;
+    margin: 30px 0;
+    border-radius: 7px;
+    background-color: rgba(105, 198, 115,0.2);
+
+
+
+
+  }
+
+
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+
+}
+
+
+
+.select {
+background: url('../images/icons/newdropdown.png') no-repeat right rgba(105, 198, 115,0.2);
+background-position-x: calc(100% - 14px);
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+}
+
+#zip{
+  width: 40%;
+
+}
+
+
+
+.formtitle{
+  padding: 20px 0;
+  font-weight: 300;
+
+}
+
+
+textarea{
+background-color:rgba(105, 198, 115,0.2);
+border: none;
+border-radius: 20px;
+width: 100%;
+ }
+
+ button{
+   margin-top: 40px;
+   background-color: rgb(105, 198, 115);
+   border: none;
+   border-radius: 5px;
+   width: 100%;
+   padding: 20px 0 20px 0;
+
+ }
+
+
+ footer{
+   margin: 40px 0px 150px 0px;
+
+   font-style: italic;
+   font-weight: 100;
+   text-align: center;
+   color: rgba(0, 0, 0, 0.7);
+
+
+ }
+
+
+   input[type="checkbox"],
+   input[type="radio"] {
+    margin-right:20px;
+
+  }
+
+
+
+ @media (min-width:768px) {
+
+   .everything{
+     max-width: 70%;
+margin: auto }
+
+li{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.firstfieldset input, select{
+  display: inline-block;
+  width: 74%;
+  float: right;
+  display: flex;
+
+
+
+}
+
+.firstfieldset label{
+        display: inline-block;
+        text-align: left;
+        width: 25%;
+        float: left;
+        margin: 5% 0 5% 0;
+        padding: 1% 0 1% 0;
+
+            }
+ }
+
+ fieldset{
+   border-color: rgba(105, 198, 115,0.2);
+
+
+ }
+
+.firstfieldset input, textarea{
+ height:50px;
+  transition-property: border, height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+
+
+}
+   input:focus{
+   background-color: rgba(105, 198, 115,0.8);
+   outline:none;
+   border-width: medium;
+   border-style: solid;
+   border-color: darkblue;
+   height:75px;
+ }
+ select:focus{
+   background-color: rgba(105, 198, 115,0.8);
+   outline:none;
+   border-width: medium;
+   border-style: solid;
+   border-color: darkblue; }
+
+ textarea{
+ height: 150px;
+
+ }
+ textarea:focus{
+   background-color: rgba(105, 198, 115,0.8);
+   outline:none;
+   border-width: medium;
+   border-style: solid;
+   border-color: darkblue;
+   height: 300px;
+ }
+
+
+ body{
+   background-color: rgba(0, 0, 0, 0.02);
+
+ }
+ .secondfieldset > li{
+   margin-bottom:15px;
+
+
+ }
+
+.secondfieldset input[type="radio"]{
+  margin-bottom: 15px;
+
+
+}
+
+input:valid:not(:focus):not(:placeholder-shown)  {
+
+        border-bottom: 10px;
+        border-radius: 10px;
+        border-bottom-color: green;
+        border-bottom-style: solid;
+        background: url('../images/icons/check1.png') no-repeat right rgba(105, 198, 115,0.2);
+        background-position-x: calc(100% - 14px);
+
+
+
+}
+
+
+input:invalid:not(:focus):not(:placeholder-shown)  {
+
+        border-bottom: 10px;
+        border-radius: 10px;
+        border-bottom-color: red;
+        border-bottom-style: solid;
+        background: rgba(150, 0, 0,0.1);
+
+
+
+
+}
+
+#textarea{
+  margin-top: 30px;
+}
